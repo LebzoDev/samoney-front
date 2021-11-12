@@ -47,7 +47,7 @@ export class DepotEmetteurPage implements OnInit {
 
   async successAlert() {
     const alert = await this.alertControl.create({
-      cssClass: 'my-custom-class',
+      cssClass: 'custom-success',
       header: 'Alert',
       subHeader: 'SUCCESS',
       message: 'Depot effecuté avec succés',
@@ -124,9 +124,9 @@ export class DepotEmetteurPage implements OnInit {
         montant: new FormControl('5000',[Validators.required]),
         frais: new FormControl('',Validators.required),
         total: new FormControl('',[Validators.required]),
-        prenombeneficiaire: new FormControl('lebou',[Validators.required]),
-        nombeneficiaire: new FormControl('dieye',[Validators.required]),
-        numeroTelClient:new FormControl('775239713',[Validators.required,Validators.pattern('^[7][5-8]{1}[0-9]{7}')])
+        prenombeneficiaire: new FormControl('lebzo',[Validators.required]),
+        nombeneficiaire: new FormControl('dev',[Validators.required]),
+        numeroTelClient:new FormControl('777777777',[Validators.required,Validators.pattern('^[7][5-8]{1}[0-9]{7}')])
 
     })
   }

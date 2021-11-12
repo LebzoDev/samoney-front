@@ -28,7 +28,6 @@ export class CalculFraisPage implements OnInit {
     })
   }
 
-
   moveOnMenu(){
     this.router.navigateByUrl('tabs');
   }
